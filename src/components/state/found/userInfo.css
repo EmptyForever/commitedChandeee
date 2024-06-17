@@ -1,0 +1,36 @@
+
+.user__info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  .user__face {
+    border-radius: 50%;
+  }
+  
+  .user__text {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  h2.user__name {
+      margin-bottom: 12px;
+  }
+  
+  a.user__linkRepositories {
+      margin-bottom: 25px;
+  }
+  
+  .user__follow {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .user__follow_second,
+  .user__follow_first {
+    display: flex;
+    gap: 8px;
+  }
+  

@@ -1,0 +1,22 @@
+.notFound {
+  margin: 30vh auto;
+  width: 156px;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  /* background-color: #ac4848; */
+}
+
+.notFound__icon {
+  width: 110px;
+  height: 110px;
+}
+
+.notFound__text {
+  font-size: 22px;
+  line-height: 140%;
+}

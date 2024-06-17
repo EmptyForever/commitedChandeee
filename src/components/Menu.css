@@ -1,0 +1,33 @@
+.center {
+  margin: 0 auto;
+  display: flex;
+  gap: 85px;
+  width: 1269px;
+}
+
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.search-content {
+  height: 40px;
+  width: 500px;
+  border-radius: 6px;
+  background-color: white;
+  margin-left: 22px;
+
+  display: flex;
+  padding: 8px 14px;
+}
+
+input {
+    /* background-color: rgb(184, 157, 157); */
+    width: 256px;
+    margin-left: 6px;
+}
+
+.blueBackground {
+  background-color: #0064eb;
+}
