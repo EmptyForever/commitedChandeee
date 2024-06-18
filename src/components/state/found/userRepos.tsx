@@ -17,7 +17,7 @@ function UserReposNew(user : UserEx2) {
     const fetchUser = async (url: string) => {
       try {
         const response = await fetch(url);
-        console.log(response);
+        // console.log(response);
         if (!response.ok) { 
           // const data = [];
           setUserGitHubRepositories([]);
@@ -27,8 +27,8 @@ function UserReposNew(user : UserEx2) {
         const data = await response.json();
         setUserGitHubRepositories(data);
 
-        console.log(data);
-        console.log(data.repos_url);
+        // console.log(data);
+        // console.log(data.repos_url);
       } catch (error) {
         // setError(error);
         console.log(error);
@@ -64,8 +64,23 @@ function UserReposNew(user : UserEx2) {
               ))}
           </ul>
           <ReactPaginate
-            previousLabel={'previous'}
-            nextLabel={'next'}
+            previousLabel={<svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <desc>
+                Created with Pixso.
+            </desc>
+            <defs/>
+            <rect id="icons / S / arrow-left" width="18.000000" height="18.000000" fill="#FFFFFF" fill-opacity="0"/>
+            <path id="Rectangle (Stroke)" d="M7.41 9L11.7 4.7L10.29 3.29L4.58 9L10.29 14.7L11.7 13.29L7.41 9Z" fill="#808080" fill-opacity="1.000000" fill-rule="evenodd"/>
+          </svg>}
+            nextLabel={<svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <desc>
+                Created with Pixso.
+            </desc>
+            <defs/>
+            <rect id="icons / S / arrow-left" width="18.000000" height="18.000000" fill="#FFFFFF" fill-opacity="0"/>
+            <path id="Rectangle (Stroke)" d="M7.41 9L11.7 4.7L10.29 3.29L4.58 9L10.29 14.7L11.7 13.29L7.41 9Z" fill="#808080" fill-opacity="1.000000" fill-rule="evenodd"/>
+          </svg>
+          }
             breakLabel={'...'}
             breakClassName={'break-me'}
             pageCount={pageCount}
